@@ -8,6 +8,8 @@ const AnotherPractice = () => {
           count: initialState.count - 1,
           showText: !initialState.showText,
         };
+      default:
+        return { initialState };
     }
   };
   const [initialState, dispatch] = useReducer(actions, {

@@ -8,6 +8,8 @@ const SquareWithReducer = () => {
           count: initialState.count * initialState.count,
           showText: !initialState.showText,
         };
+      default:
+        return initialState;
     }
   };
   const [initialState, dispatch] = useReducer(actions, {
